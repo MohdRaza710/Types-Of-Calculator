@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import image from '../../public/clac-Photoroom.png';
+import image from '../assets/clac-photoroom.png'; // Adjust the path as necessary
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +27,7 @@ function Navbar() {
         <nav className="text-black bg-blue-500 p-4 flex flex-col md:flex-row">
             <div className="flex justify-between items-center w-full md:w-auto">
                 <h1 className="text-white text-lg font-bold mr-5">
-                    <img className='h-12 transform rotate-180' src={image} alt="" />
+                    <Link to="/"><img className='h-12 transform rotate-180' src={image} alt="" /></Link>
                 </h1>
                 <button
                     className="text-white md:hidden"
@@ -38,9 +38,8 @@ function Navbar() {
                 </button>
             </div>
             <ul
-                className={`${
-                    isOpen ? 'block' : 'hidden'
-                } md:flex md:space-x-4 text-white font-bold mt-4 md:mt-0 decoration-none`}
+                className={`${isOpen ? 'block' : 'hidden'
+                    } md:flex md:space-x-4 text-white font-bold mt-4 md:mt-0 decoration-none`}
             >
                 {menuItems.map((item, index) => (
                     <li
