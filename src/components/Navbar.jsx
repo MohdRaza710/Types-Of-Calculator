@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import image from '../assets/clac-photoroom.png'; // Adjust the path as necessary
+import image from '../../public/clac-photoroom.png'; // Adjust the path as necessary
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
