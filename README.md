@@ -1,1 +1,1 @@
-https://types-of-calculator-3fgvprop6-mohdrazas-projects-a6d4e574.vercel.app/
+https://types-of-calculator.vercel.app/
